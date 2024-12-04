@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "text": "What is the capital of France?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Berlin",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Madrid",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Paris",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "text": "Rome",
+        "isCorrect": false
+      }
+    ],
+    "prize": 100
+  },
+  {
+    "id": 2,
+    "text": "Which planet is known as the Red Planet?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Earth",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Mars",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Jupiter",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Venus",
+        "isCorrect": false
+      }
+    ],
+    "prize": 200
+  },
+  {
+    "id": 3,
+    "text": "What is the largest ocean on Earth?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Atlantic Ocean",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Indian Ocean",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Pacific Ocean",
+        "isCorrect": true
+      },
+      {
+        "id": 4,
+        "text": "Arctic Ocean",
+        "isCorrect": false
+      }
+    ],
+    "prize": 300
+  }
+]
