@@ -10,7 +10,7 @@ const typeDefs = gql`
   type Question {
     id: Int!
     text: String!
-    answer: [Answer!]!
+    answers: [Answer!]!
   }
 
   type Query {

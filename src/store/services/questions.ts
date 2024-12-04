@@ -9,8 +9,10 @@ const GET_QUESTIONS = gql`
     questions {
       id
       text
-      answer {
+      answers {
         id
+        text
+        isCorrect
       }
     }
   }

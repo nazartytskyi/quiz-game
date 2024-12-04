@@ -28,7 +28,7 @@ export type Query = {
 
 export type Question = {
   __typename?: 'Question';
-  answer: Array<Answer>;
+  answers: Array<Answer>;
   id: Scalars['Int']['output'];
   text: Scalars['String']['output'];
 };
@@ -36,4 +36,4 @@ export type Question = {
 export type GetQuestionsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetQuestionsQuery = { __typename?: 'Query', questions: Array<{ __typename?: 'Question', id: number, text: string, answer: Array<{ __typename?: 'Answer', id: number }> }> };
+export type GetQuestionsQuery = { __typename?: 'Query', questions: Array<{ __typename?: 'Question', id: number, text: string, answers: Array<{ __typename?: 'Answer', id: number, text: string, isCorrect?: boolean | null }> }> };
