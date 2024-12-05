@@ -21,6 +21,7 @@
     "@apollo/client": "^3.11.10",
     "@reduxjs/toolkit": "^2.4.0",
     "apollo-server-micro": "^3.13.0",
+    "classnames": "^2.5.1",
     "graphql": "^16.9.0",
     "next": "14.2.19",
     "react": "^18",
@@ -49,6 +50,7 @@
     "jsdom": "^25.0.1",
     "lint-staged": "^15.2.10",
     "prettier": "^3.4.1",
+    "sass": "^1.82.0",
     "typescript": "^5",
     "vitest": "^2.1.8"
   }

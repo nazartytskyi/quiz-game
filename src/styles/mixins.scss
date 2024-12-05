@@ -1,0 +1,54 @@
+@use '@/styles/variables' as *;
+@use 'sass:math';
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin hexStyle($height, $width) {
+  $radius: 6px;
+  $border: 1px;
+  $heightWithBorders: $height + $border + $border;
+  $side: math.div($heightWithBorders, math.sqrt(2));
+  $top: math.div(($height - $side), 2) - $border * 2;
+
+  position: relative;
+  width: $width;
+  height: $height;
+  background: $white100;
+  border: $border solid $black40;
+  border-right: none;
+  border-left: none;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: $top;
+    width: $side;
+    height: $side;
+    background: $white100;
+    border: $border solid $black40;
+    border-radius: $radius;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transform: rotate(45deg);
+    content: '';
+    z-index: -1;
+  }
+
+  &:before {
+    left: math.div(($side), -2);
+  }
+
+  &:after {
+    right: math.div(($side), -2);
+  }
+}
