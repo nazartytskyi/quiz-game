@@ -9,6 +9,7 @@ const GET_QUESTIONS = gql`
     questions {
       id
       text
+      prize
       answers {
         id
         text

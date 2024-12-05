@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { questionsApi } from './services/questions';
-import questionsReducer from './slices/questionsSlice';
+import gameReducer from './slices/gameSlice';
 
 export const makeStore = () =>
   configureStore({
     reducer: {
-      questionsSlice: questionsReducer,
+      gameSlice: gameReducer,
       [questionsApi.reducerPath]: questionsApi.reducer,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(questionsApi.middleware),

@@ -25,6 +25,28 @@
   }
 }
 
+@mixin answerCorrectTransition() {
+  @keyframes answerCorrectTransition {
+    from {
+      background-color: $white100;
+    }
+    to {
+      background-color: $green5;
+    }
+  }
+}
+
+@mixin answerWrongTransition() {
+  @keyframes answerWrongTransition {
+    from {
+      background-color: $white100;
+    }
+    to {
+      background-color: $red5;
+    }
+  }
+}
+
 @mixin hexStyle($height, $width) {
   $radius: 6px;
   $border: 1px;

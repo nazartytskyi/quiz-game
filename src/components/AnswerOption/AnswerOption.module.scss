@@ -4,8 +4,6 @@
 
 .answer {
   @include hexStyle(72px, 350px);
-
-  cursor: pointer;
   border-color: $black40;
 
   &:before,
@@ -13,7 +11,8 @@
     border-color: $black40;
   }
 
-  &:hover {
+  &:hover:enabled {
+    cursor: pointer;
     border-color: $orange100;
 
     .line,
@@ -23,7 +22,7 @@
     }
   }
 
-  &:active {
+  &:active:enabled {
     background-color: $orange5;
     border-color: $orange120;
     .line,
@@ -41,21 +40,30 @@
   @include xl {
     @include hexStyle(56px, 270px);
   }
+
+  @include sm {
+    @include hexStyle(56px, 220px);
+  }
 }
 
 .answerCorrect {
+  @include answerCorrectTransition();
   background-color: $green5;
+  animation: 1s answerCorrectTransition ease-in-out;
   border-color: $green100;
 
   .line,
   &:before,
   &:after {
     background-color: $green5;
+    animation: 1s answerCorrectTransition ease-in-out;
     border-color: $green100;
   }
 }
 
 .answerWrong {
+  @include answerWrongTransition();
+  animation: 1s answerWrongTransition ease-in-out;
   background-color: $red5;
   border-color: $red100;
 
@@ -64,6 +72,7 @@
   &:after {
     background-color: $red5;
     border-color: $red100;
+    animation: 1s answerWrongTransition ease-in-out;
   }
 }
 

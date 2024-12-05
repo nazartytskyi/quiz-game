@@ -1,4 +1,12 @@
+import { createSelector } from '@reduxjs/toolkit';
 import { RootState } from './store';
 
-export const selectQuestions = (state: RootState) => state.questionsSlice.questions;
-export const selectFirstQuestion = (state: RootState) => state.questionsSlice.questions[0];
+const selectQuestionsState = (state: RootState) => state.gameSlice.questions;
+export const selectGame = (state: RootState) => state.gameSlice;
+
+export const selectQuestionsPrizes = createSelector([selectQuestionsState], (questions) =>
+  questions.map((question) => ({
+    questionId: question.id,
+    amount: question.prize,
+  })),
+);

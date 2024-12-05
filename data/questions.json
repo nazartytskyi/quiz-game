@@ -1,43 +1,75 @@
 [
   {
     "id": 1,
-    "text": "What is the capital of France?",
+    "text": "How are you today?",
     "answers": [
       {
         "id": 1,
-        "text": "Berlin",
-        "isCorrect": false
+        "text": "Good",
+        "isCorrect": true
       },
       {
         "id": 2,
-        "text": "Madrid",
-        "isCorrect": false
+        "text": "Fine",
+        "isCorrect": true
       },
       {
         "id": 3,
-        "text": "Paris",
+        "text": "Great",
         "isCorrect": true
       },
       {
         "id": 4,
-        "text": "Rome",
-        "isCorrect": false
+        "text": "Excellent",
+        "isCorrect": true
       }
     ],
     "prize": 100
   },
   {
     "id": 2,
-    "text": "Which planet is known as the Red Planet?",
+    "text": "What is the capital of Germany?",
     "answers": [
       {
         "id": 1,
-        "text": "Earth",
+        "text": "Berlin",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "Munich",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Frankfurt",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Hamburg",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Cologne",
+        "isCorrect": false
+      }
+    ],
+    "prize": 200
+  },
+  {
+    "id": 3,
+    "text": "Which planet is known for its rings?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Mars",
         "isCorrect": false
       },
       {
         "id": 2,
-        "text": "Mars",
+        "text": "Saturn",
         "isCorrect": true
       },
       {
@@ -49,35 +81,316 @@
         "id": 4,
         "text": "Venus",
         "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Neptune",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "text": "Uranus",
+        "isCorrect": false
       }
     ],
-    "prize": 200
+    "prize": 400
   },
   {
-    "id": 3,
-    "text": "What is the largest ocean on Earth?",
+    "id": 4,
+    "text": "What is the largest mammal?",
     "answers": [
       {
         "id": 1,
-        "text": "Atlantic Ocean",
+        "text": "African Elephant",
         "isCorrect": false
       },
       {
         "id": 2,
-        "text": "Indian Ocean",
+        "text": "Blue Whale",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Giraffe",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Hippopotamus",
+        "isCorrect": false
+      }
+    ],
+    "prize": 800
+  },
+  {
+    "id": 5,
+    "text": "Who developed the theory of relativity?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Isaac Newton",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Albert Einstein",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Galileo Galilei",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Nikola Tesla",
+        "isCorrect": false
+      }
+    ],
+    "prize": 1600
+  },
+  {
+    "id": 6,
+    "text": "What is the smallest country in the world by land area?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Monaco",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Vatican City",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "San Marino",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Liechtenstein",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Malta",
+        "isCorrect": false
+      }
+    ],
+    "prize": 3200
+  },
+  {
+    "id": 7,
+    "text": "Which element has the atomic number 1?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Hydrogen",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "text": "Helium",
         "isCorrect": false
       },
       {
         "id": 3,
-        "text": "Pacific Ocean",
+        "text": "Lithium",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Carbon",
+        "isCorrect": false
+      }
+    ],
+    "prize": 6400
+  },
+  {
+    "id": 8,
+    "text": "Who is known as the 'Father of Computers'?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Alan Turing",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Charles Babbage",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Bill Gates",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Steve Jobs",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Ada Lovelace",
+        "isCorrect": false
+      }
+    ],
+    "prize": 12800
+  },
+  {
+    "id": 9,
+    "text": "In which year did the Titanic sink?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "1910",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "1912",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "1914",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "1916",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "1920",
+        "isCorrect": false
+      }
+    ],
+    "prize": 25600
+  },
+  {
+    "id": 10,
+    "text": "What is the hardest natural substance on Earth?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Gold",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Iron",
+        "isCorrect": false
+      },
+      {
+        "id": 3,
+        "text": "Diamond",
         "isCorrect": true
       },
       {
         "id": 4,
-        "text": "Arctic Ocean",
+        "text": "Silver",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Platinum",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "text": "Titanium",
         "isCorrect": false
       }
     ],
-    "prize": 300
+    "prize": 51200
+  },
+  {
+    "id": 11,
+    "text": "Which language has the most native speakers worldwide?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "English",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Mandarin Chinese",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Spanish",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Hindi",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Arabic",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "text": "Bengali",
+        "isCorrect": false
+      },
+      {
+        "id": 7,
+        "text": "Portuguese",
+        "isCorrect": false
+      },
+      {
+        "id": 8,
+        "text": "Russian",
+        "isCorrect": false
+      }
+    ],
+    "prize": 102400
+  },
+  {
+    "id": 12,
+    "text": "What is the process by which plants make their food using sunlight?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Respiration",
+        "isCorrect": false
+      },
+      {
+        "id": 2,
+        "text": "Photosynthesis",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "text": "Transpiration",
+        "isCorrect": false
+      },
+      {
+        "id": 4,
+        "text": "Glycolysis",
+        "isCorrect": false
+      },
+      {
+        "id": 5,
+        "text": "Fermentation",
+        "isCorrect": false
+      },
+      {
+        "id": 6,
+        "text": "Metabolism",
+        "isCorrect": false
+      }
+    ],
+    "prize": 204800
   }
 ]

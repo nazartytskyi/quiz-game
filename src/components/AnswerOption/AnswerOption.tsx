@@ -5,13 +5,15 @@ import styles from './AnswerOption.module.scss';
 interface IAnswerOptionProps {
   children: ReactNode;
   onClick?: () => void;
-  state?: 'correct' | 'wrong';
+  disabled?: boolean;
+  state?: 'correct' | 'wrong' | null;
 }
 
-export function AnswerOption({ state, children, onClick }: IAnswerOptionProps) {
+export function AnswerOption({ state, disabled, children, onClick }: IAnswerOptionProps) {
   return (
     <div className={styles.wrapper}>
       <button
+        disabled={!state && disabled}
         type="button"
         onClick={onClick}
         className={classNames(styles.answer, {
@@ -24,7 +26,7 @@ export function AnswerOption({ state, children, onClick }: IAnswerOptionProps) {
             [styles.wrong]: state === 'wrong',
             [styles.correct]: state === 'correct',
           })}
-         />
+        />
         {children}
       </button>
     </div>

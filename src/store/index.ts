@@ -1,4 +1,4 @@
 export * from './hooks';
-export * from './slices/questionsSlice';
+export * from './slices/gameSlice';
 export * from './store';
 export * from './selectors';
