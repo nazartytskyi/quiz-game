@@ -4,6 +4,7 @@ Node v22.11.0 was used.
 
 ```bash
 npm install
+npm run prepare
 npm run dev
 ```
 
