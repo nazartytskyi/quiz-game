@@ -1,0 +1,81 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+@use 'sass:math';
+
+.answer {
+  @include hexStyle(72px, 350px);
+
+  cursor: pointer;
+  border-color: $black40;
+
+  &:before,
+  &:after {
+    border-color: $black40;
+  }
+
+  &:hover {
+    border-color: $orange100;
+
+    .line,
+    &:before,
+    &:after {
+      border-color: $orange100;
+    }
+  }
+
+  &:active {
+    background-color: $orange5;
+    border-color: $orange120;
+    .line,
+    &:before,
+    &:after {
+      background-color: $orange5;
+      border-color: $orange120;
+    }
+  }
+
+  @include mobile {
+    @include hexStyle(56px, 280px);
+  }
+}
+
+.answerCorrect {
+  background-color: $green5;
+  border-color: $green100;
+
+  .line,
+  &:before,
+  &:after {
+    background-color: $green5;
+    border-color: $green100;
+  }
+}
+
+.answerWrong {
+  background-color: $red5;
+  border-color: $red100;
+
+  .line,
+  &:before,
+  &:after {
+    background-color: $red5;
+    border-color: $red100;
+  }
+}
+
+.line {
+  top: calc(50% - 1px);
+  left: -100vw;
+  position: absolute;
+  width: 200vw;
+  border-top: 1px solid $black40;
+  z-index: -2;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
