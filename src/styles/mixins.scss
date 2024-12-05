@@ -1,14 +1,26 @@
 @use '@/styles/variables' as *;
 @use 'sass:math';
 
-@mixin mobile {
-  @media (max-width: $mobile-breakpoint) {
+@mixin sm {
+  @media (max-width: $sm-breakpoint) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (max-width: $tablet-breakpoint) {
+@mixin md {
+  @media (max-width: $md-breakpoint) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $lg-breakpoint) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $xl-breakpoint) {
     @content;
   }
 }

@@ -16,7 +16,7 @@ export function InfoScreen({ fancyBg, children }: IInfoScreenProps) {
       })}
     >
       <div className={styles.contentWrapper}>
-        <Icon className={classNames(styles.thumbIcon)} icon="Thumb" />
+        <Icon className={styles.thumbIcon} icon="Thumb" />
         <div>{children}</div>
       </div>
     </div>

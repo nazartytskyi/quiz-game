@@ -1,0 +1,57 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.aside {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  min-width: 376px;
+  background-color: $white100;
+
+  .content {
+    display: flex;
+    width: 100%;
+  }
+
+  @include md {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+
+    .content {
+      display: none;
+    }
+
+    &.open {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+
+      .content {
+        display: flex;
+      }
+    }
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 200;
+  border: none;
+  background: none;
+
+  @include md {
+    display: flex;
+    position: absolute;
+  }
+}

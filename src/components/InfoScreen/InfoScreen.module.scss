@@ -41,7 +41,7 @@
   width: 450px;
   max-width: 100%;
 
-  @include mobile {
+  @include sm {
     width: 100%;
   }
 }
@@ -62,7 +62,7 @@
     width: 50%;
   }
 
-  @include mobile {
+  @include sm {
     flex-direction: column;
 
     & > div {

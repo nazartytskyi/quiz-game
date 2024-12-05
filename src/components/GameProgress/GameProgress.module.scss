@@ -1,0 +1,28 @@
+@use '@/styles/mixins' as *;
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.prizeWrapper {
+  margin-top: 8px;
+
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+.prizeText {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
+  @include sm {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,55 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+@use 'sass:math';
+
+.answer {
+  @include hexStyle(40px, 200px);
+  position: absolute;
+  border-color: $black40;
+
+  &:before,
+  &:after {
+    border-color: $black40;
+  }
+
+  @include sm {
+    @include hexStyle(32px, 220px);
+  }
+}
+
+.active {
+  border-color: $orange100;
+  color: $orange100;
+  .line,
+  &:before,
+  &:after {
+    border-color: $orange100;
+  }
+}
+
+.past {
+  color: $black40;
+}
+
+.line {
+  top: calc(50% - 1px);
+  left: -100vw;
+  position: absolute;
+  width: 200vw;
+  border-top: 1px solid $black40;
+  z-index: -2;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40px;
+
+  @include sm {
+    height: 32px;
+  }
+}

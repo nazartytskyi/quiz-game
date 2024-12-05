@@ -18,12 +18,12 @@
     font-weight: 600;
   }
 
-  @include tablet {
+  @include lg {
     align-items: center;
     justify-content: space-around;
   }
 
-  @include mobile {
+  @include sm {
     padding: 16px 0;
 
     h2 {
@@ -39,11 +39,11 @@
   min-height: 300px;
   height: 60%;
 
-  @include tablet {
+  @include lg {
     height: 50%;
   }
 
-  @include mobile {
+  @include sm {
     align-items: center;
     height: 40%;
   }
@@ -62,15 +62,12 @@
   margin: 16px 0;
   width: 50%;
 
-  @include mobile {
+  @include sm {
     font-size: 14;
-  }
-
-  @include tablet {
     width: 100%;
   }
 
-  @include mobile {
+  @include lg {
     width: 100%;
   }
 }
@@ -85,7 +82,7 @@
     margin: 0 8px;
   }
 
-  @include mobile {
+  @include sm {
     font-size: 14px;
   }
 }

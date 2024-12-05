@@ -34,8 +34,12 @@
     }
   }
 
-  @include mobile {
+  @include lg {
     @include hexStyle(56px, 280px);
+  }
+
+  @include xl {
+    @include hexStyle(56px, 270px);
   }
 }
 
