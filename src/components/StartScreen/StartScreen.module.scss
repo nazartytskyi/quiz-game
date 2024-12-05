@@ -1,0 +1,28 @@
+@use '@/styles/mixins' as *;
+
+.content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  h1 {
+    line-height: 65px;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 64px;
+  }
+
+  @include mobile {
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      text-align: center;
+      line-height: 37px;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+}

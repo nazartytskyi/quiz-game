@@ -7,7 +7,9 @@ interface IButtonProps {
 }
 
 export function Button({ children, onClick }: IButtonProps) {
-  return <button onClick={onClick} className={styles.button} type="button">
-    {children}
-  </button>
+  return (
+    <button onClick={onClick} className={styles.button} type="button">
+      {children}
+    </button>
+  );
 }
