@@ -10,6 +10,7 @@ const typeDefs = gql`
   type Question {
     id: Int!
     text: String!
+    prize: Int!
     answers: [Answer!]!
   }
 

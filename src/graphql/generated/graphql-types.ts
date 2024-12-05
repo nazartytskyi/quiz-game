@@ -30,10 +30,11 @@ export type Question = {
   __typename?: 'Question';
   answers: Array<Answer>;
   id: Scalars['Int']['output'];
+  prize: Scalars['Int']['output'];
   text: Scalars['String']['output'];
 };
 
 export type GetQuestionsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetQuestionsQuery = { __typename?: 'Query', questions: Array<{ __typename?: 'Question', id: number, text: string, answers: Array<{ __typename?: 'Answer', id: number, text: string, isCorrect?: boolean | null }> }> };
+export type GetQuestionsQuery = { __typename?: 'Query', questions: Array<{ __typename?: 'Question', id: number, text: string, prize: number, answers: Array<{ __typename?: 'Answer', id: number, text: string, isCorrect?: boolean | null }> }> };
