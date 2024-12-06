@@ -4,6 +4,7 @@
 
 .answer {
   @include hexStyle(72px, 350px);
+  color: $black100;
   border-color: $black40;
 
   &:before,
