@@ -28,7 +28,7 @@ export function GameProgress({ currentQuestionId, prizes }: IGameProgressProps) 
     return (
       <div key={prize.questionId} className={styles.prizeWrapper}>
         <Prize state={state}>
-          <div className={styles.prizeText}>{prize.amount}</div>
+          <div className={styles.prizeText}>${prize.amount}</div>
         </Prize>
       </div>
     );
